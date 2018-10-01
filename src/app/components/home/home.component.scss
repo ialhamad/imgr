@@ -1,0 +1,22 @@
+.home {
+  display: flex;
+  a {
+    display: block;
+    text-decoration: none;
+    padding: 10px 20px;
+    background: #ffc145;
+    color: #fff;
+    font-size: 32px;
+    margin: 10px;
+    border-radius: 10px;
+    transition: all 0.2s ease-in-out;
+    outline: 0;
+    font-family: "Amatic SC", cursive;
+    &:hover {
+      background: #ffb013;
+    }
+    &:focus {
+      box-shadow: 0 0 0 4px rgba(#c98600, 0.4);
+    }
+  }
+}

@@ -1,0 +1,31 @@
+<div class="upload-image">
+  <form class="form" (submit)="upload($event)">
+    <div class="input-field">
+      <input type="file" name="image" id='img' class="inputfile" #imageInput (change)="previewImage(imageInput)">
+      <label for="img">
+        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+          stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-image">
+          <rect x="3" y="3" width="18" height="18" rx="2" ry="2" />
+          <circle cx="8.5" cy="8.5" r="1.5" />
+          <polyline points="21 15 16 10 5 21" /></svg>
+        <span>Choose an image</span>
+      </label>
+    </div>
+    <div class="input-field">
+      <label for="title">Title</label>
+      <input type="text" name="title" id='title'>
+    </div>
+    <div class="input-field">
+      <label for="description">Description</label>
+      <input type="text" name="description" id='description'>
+    </div>
+    <div class="input-field">
+      <label for="date">date</label>
+      <input type="date" name="date" id='date'>
+    </div>
+    <button type="submit">Upload!</button>
+  </form>
+  <div class="preview">
+    <div><img src="" alt="preview"></div>
+  </div>
+</div>
